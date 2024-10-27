@@ -22,6 +22,7 @@ public class BulletBeheavior : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<EnemyController>().loseHealth(damage);
+            Destroy(gameObject);
         }
     }
 }

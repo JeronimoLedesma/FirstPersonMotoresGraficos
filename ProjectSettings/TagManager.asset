@@ -9,6 +9,8 @@ TagManager:
   - collect
   - Goal
   - Bullet
+  - Enemy
+  - score
   layers:
   - Default
   - TransparentFX

@@ -689,3 +689,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthSlider: {fileID: 7391234720420651817}
+  scoreManager: {fileID: 0}
+  scoreGain: 10
