@@ -13,7 +13,9 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         scoreManager = GameObject.FindGameObjectWithTag("score");
+        
     }
+
     public void loseHealth(float damage)
     {
         health -= damage;

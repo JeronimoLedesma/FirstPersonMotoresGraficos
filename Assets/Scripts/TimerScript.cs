@@ -15,7 +15,7 @@ public class TimerScript : MonoBehaviour
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-        if (remainingTime == 0)
+        if (remainingTime <= 0)
         {
             SceneManager.LoadScene(2);
         }

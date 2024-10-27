@@ -1,24 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] TextMeshProUGUI display;
+    
     void Start()
     {
-        
+        display.text = Score.score.ToString() + " puntos";
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void PlayAgain()
-    {
-        SceneManager.LoadScene(0);
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Score.score = 0;
+            SceneManager.LoadScene(0);
+        }
     }
 }

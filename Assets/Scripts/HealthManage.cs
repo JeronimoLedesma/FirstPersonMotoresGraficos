@@ -8,7 +8,8 @@ using UnityEngine.UI;
 public class HealthManage : MonoBehaviour
 {
     public TextMeshProUGUI valueText;
-   public void OnSLiderChanged(float value)
+   
+    public void OnSLiderChanged(float value)
     {
         valueText.text = value.ToString();
     }
